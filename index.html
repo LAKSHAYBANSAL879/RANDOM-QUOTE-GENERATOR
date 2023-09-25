@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Quotes</title>
+  </head>
+  <body>
+    <div class="content">
+    <div class="container">
+      <h1 class="head">Quote of the Day</h1>
+      <div class="quote" id="quote">
+        <p class="randomQuote" id="randomQuotes">Loding...</p>
+        <span class="by" id="author">Loding...</span>
+      </div>
+      <div class="icons">
+        <div class="icon">
+        <i class="fa-solid fa-volume-high fa-xl" id="sound"></i>
+        <select name="languages" id="languages">
+          <option value="hn">Hindi</option>
+          <option value="en">English</option>
+        </select>
+        <i class="fas fa-copy fa-xl" id="copy" onclick="copy()"></i>
+        </div>
+        <div class="btn">
+        <button id="btn">New Quote</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/8c9b0ad18f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

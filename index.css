@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+*{
+    
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Mooli', sans-serif;
+}
+body{
+    background: linear-gradient(145deg,rgb(179, 248, 245),rgb(37, 150, 224));
+    width: 100%;
+    height: 100vh;
+
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    display: flex;
+    min-width: 40%;
+    max-width: 60%;
+    /* height: 40vh; */
+    height: fit-content;
+margin-top: 10vh;
+    padding: 10px 15px 12px 18px;
+    flex-direction: column;
+background-color:white ;
+color: black;
+}
+.icons{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    flex-direction: row;
+margin-top: 16vh;
+margin-bottom: 1vh;
+
+}
+select{
+    width: 6vw;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin-left: 1vw;
+}
+
+.icon{
+width: 40%;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+cursor: pointer;
+}
+#copy{
+    margin-left: 2vw;
+}
+.btn{
+   width: 40%;
+   margin-left: 15vw;
+}
+#btn{
+    width: fit-content;
+    padding: 15px;
+    margin-bottom: 2vh;
+    margin-left: 7vw;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(65, 169, 249);
+    border-radius: 12px;
+border: none;
+}
+.head{
+    text-align: center;
+    font-size: 38px;
+/* position: absolute; */
+}
+.head::after{
+    content: '';
+    width: 85px;
+    height: 4px;
+    border-radius: 8px;
+    background: rgb(33, 138, 213);
+    position: absolute;
+    margin-top: 7.5vh;
+    margin-left: -13vw;
+}
+.randomQuote{
+    text-align: center;
+    margin-top: 4vh;
+    font-size: 28px;
+    font-weight: 800;
+}
+.randomQuote::after,.randomQuote::before{
+    content: '"';
+}
+.by{
+margin-left: 32vw; 
+ margin-top: 8vh;
+
+position: absolute;
+font-size: 22px;
+
+}
+.by::before{
+    content: '';
+    width: 22px;
+    background: rgb(33, 138, 213);
+ border-radius: 5px;
+    height: 4px;
+    position: absolute;
+    top: 10px;
+    left: -35px;
+}
+@media (max-width:588px) {
+  #btn{
+    margin-left: -6vw;
+    font-size: 15px;
+  }  
+  .container{
+    width: fit-content;
+    padding: 25px;
+  }
+  .by{
+    margin-left: 14vw; 
+     margin-top: 8vh;
+    
+    position: absolute;
+    font-size: 15px;
+    
+    }
+    .head::after{
+        content: '';
+        width: 65px;
+        height: 4px;
+        border-radius: 8px;
+        background: rgb(33, 138, 213);
+        position: absolute;
+        margin-top: 7.5vh;
+        margin-left: -29vw;
+    }
+}
